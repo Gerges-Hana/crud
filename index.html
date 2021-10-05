@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>gerges <i class="mdi mdi-cursor-default-click-outline:"></i></title>
+</head>
+
+<body>
+<div class="w-75 m-auto py-5">
+<form action="">
+
+    <div class="form-group">
+        <label class="" for="productName"> productName</label>
+        <input class="form-control " type="text" id="productName">
+    </div>
+    <div class="form-group">
+        <label class="" for="productPrice"> productPrice</label>
+        <input class="form-control " type="number" id="productPrice">
+    </div>
+    <div class="form-group">
+        <label class="" for="productCategory"> productCategory</label>
+        <input class="form-control " type="text" id="productCategory">
+    </div>
+    <div class="form-group">
+        <label class="" for="productDesc"> productDesc</label>
+        <textarea class="form-control " type="text" id="productDesc"></textarea>
+    </div>
+</form> 
+<button  id="mainBotn" class="btn btn-outline-info" >Add Producte</button> 
+</div>
+
+
+
+<div class="w-75 m-auto py-3">
+    
+    <input onkeyup="searchProductName(this.value)" id="searchInput" class="form-control w-75 m-auto" placeholder="search..." type="text">
+
+
+    <table class="table table-striped my-5 text-center">
+        <thead>
+            <th>Index</th>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th>productDesc</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody id="tableBody" >
+           
+        </tbody>
+    </table>
+</div>
+
+    <!-- <script type="module" src="js/mine.js"></script> -->
+    <script src="js/mine.js"></script>
+    <script src="E:\Route\مراجعة js\array\array1\jQuery\js\jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- <script src=""></script> -->
+</body>
+
+</html>
